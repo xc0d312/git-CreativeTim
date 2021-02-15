@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="wrapper">
+       
+        <div class="sidebar" id=sidebar>
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <i class="fab fa-github-alt"></i>
+                    <a href="#">creative tim</a>
+                </div>  
+                <div class="sidebarBtn">
+                    <a href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-box"></i>
+                        <span>productos</span>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-cash-register"></i>
+                        <span>ventas</span>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>compras</span>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-user-tie"></i>
+                        <span>proveedores</span>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-users"></i>
+                        <span>clientes</span>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>ganancias</span>
+                    </a>
+                </div>
+            </div>
+                
+                
+        </div>
+        <div class="main-panel">
+            <nav class="navbar">
+                <div class="navbarButtoms" id="contentButtons">
+                    <a href="#" id="btnSidebar"><i class="fas fa-bars"></i></a>
+                    <a href="#" id="btnleft"><i class="fas fa-qrcode"></i></a>
+                    <div class="btnFixed" id="botomFixed">
+                        <button id="btnFixed"><i class="fas fa-chart-bar"></i></button>
+                    </div>
+                    <p>Dashboard</p>
+                </div>
+                <div class="navbarProfile">
+                    <i class="fas fa-search"></i>
+                    <i class="fad fa-bells"></i>
+                    <div class="photo">
+                    <img src="img/284717-como-ser-programador-web-2018.jpg" alt="" width="80px">
+                    </div>
+                </div>
+            </nav>
+            <div class="content" id="main">
+                <div class="grid-row">
+                    <div class="card cardChart">
+                        <div class="cardHeader">
+                         <span>Total de usuarios</span>
+                         <h6>Mensualmente</h6>
+                        </div>
+                            <div class="cardBody">
+                                 <div class="chartArea">
+                                     <canvas id="miChart" class="chartjs-render-monitor"  height="220"></canvas>
+                                 </div>
+                             </div>    
+                     </div>
+                </div>
+               <div class="grid-row-4">
+                <div class="card">
+                    <div class="card-Header">
+                          <div class="icono">
+                            <i class="far fa-comments"></i>
+                          </div>
+                          <div>
+                             <span>Mensajes</span>
+                             <h6>150GB</h6>
+                          </div>
+                    </div>
+                    <div class="footerCard">
+                        <i class="fal fa-redo"></i>
+                      <span>Actualiza ahora</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-Header">
+                        <div class="icono">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div>
+                           <span>Users</span>
+                           <h6>150,000</h6>
+                        </div>
+                  </div>
+                  <div class="footerCard">
+                    <i class="fal fa-hourglass-start"></i>
+                    <span>Comentarios de los clientes</span>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-Header">
+                        <div class="icono">
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div>
+                           <span>Seguidores</span>
+                           <h6>+50K</h6>
+                        </div>
+                  </div>
+                  <div class="footerCard">
+                    <i class="fal fa-wave-square"></i>
+                    <span>Ultimas investigación</span>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-Header">
+                        <div class="icono">
+                            <i class="fal fa-dna"></i>
+                        </div>
+                        <div>
+                           <span>Errores</span>
+                           <h6>35</h6>
+                        </div>
+                  </div>
+                  <div class="footerCard">
+                    <i class="fal fa-watch"></i>
+                    <span>En las ultimas horas</span>
+                  </div>
+                </div>
+               </div>
+                    <div class="grid-row_charts">
+                                <div class="cardChart card">
+                                    <div class="cardHeader">
+                                            <span>total de seguidores</span>
+                                            <h6>Mensualmente</h6>
+                                    </div>
+                                    <div class="cardBodyChart">
+                                        <div class="chartArea">
+                                            <canvas id="miChart1" class="chartjs-render-monitor"  height="220" ></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cardChart card">
+                                    <div class="cardHeader">
+                                        <span>total de donaciones</span>
+                                        <h6>Mensualmente</h6>
+                                        </div>
+                                        <div class="cardBodyChart">
+                                            <div class="chartArea">
+                                                <canvas id="miChart2"class="chartjs-render-monitor"  height="220"></canvas>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="cardChart card">
+                                    <div class="cardHeader">
+                                        <span>total de Ventas</span>
+                                        <h6>Mensualmente</h6>
+                                    </div>
+                                    <div class="cardBodyChart">
+                                        <div class="chartArea">
+                                            <canvas id="miChart3" class="chartjs-render-monitor"  height="220"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script>
+        let ctx = document.getElementById('miChart').getContext('2d');
+        let ctx1 = document.getElementById('miChart1').getContext('2d');
+        let ctx2 = document.getElementById('miChart2').getContext('2d');
+        let ctx3 = document.getElementById('miChart3').getContext('2d');
+        Chart.defaults.global.defaultFontSize = 10
+        Chart.defaults.global.defaultFontColor = '#1BD688';
+
+        var myChart = new Chart(ctx,{
+            type: 'line',
+            data: {
+                labels: ['PHP', 'JS', 'C#', 'C++', 'C', 'KOT'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                       'transparent'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive:true,
+                maintainAspectRatio:false,
+                legend:{display:false},
+                tooltips:{
+                    backgroundColor:"#ffff",
+                    titleFontColor:"#4c4c4c4c",
+                    bodyFontColor:"#4c4c4c4c",
+                    enable:true,
+                    modo:"single",
+                },
+                layout:{
+                    padding:{
+                        left:8,
+                        top:0,
+                        rigth:0,
+                        bottom:20,
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var myChart1 = new Chart(ctx1,{
+            type: 'line',
+            data: {
+                labels: ['JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'transparent'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive:true,
+                maintainAspectRatio:false,
+                legend:{display:false},
+                tooltips:{
+                    backgroundColor:"#ffff",
+                    titleFontColor:"#4c4c4c4c",
+                    bodyFontColor:"#4c4c4c4c",
+                    enable:true,
+                    modo:"single",
+                },
+                layout:{
+                    padding:{
+                        left:8,
+                        top:0,
+                        rigth:0,
+                        bottom:20,
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var myChart2 = new Chart(ctx2,{
+            type: 'bar',
+            data: {
+                labels: ['NI', 'CR', 'MX', 'JP', 'EC', 'SP'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                    'transparent'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive:true,
+                maintainAspectRatio:false,
+                legend:{display:false},
+                tooltips:{
+                    backgroundColor:"#ffff",
+                    titleFontColor:"#4c4c4c4c",
+                    bodyFontColor:"#4c4c4c4c",
+                    enable:true,
+                    modo:"single",
+                },
+                layout:{
+                    padding:{
+                        left:8,
+                        top:0,
+                        rigth:0,
+                        bottom:20,
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var myChart3 = new Chart(ctx3,{
+            type: 'line',
+            data: {
+                labels: ['LUN', 'MAR', 'MIE', 'JU', 'VIE', 'SAB'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                    'transparent'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive:true,
+                maintainAspectRatio:false,
+                legend:{display:false},
+                tooltips:{
+                    backgroundColor:"#ffff",
+                    titleFontColor:"#4c4c4c4c",
+                    bodyFontColor:"#4c4c4c4c",
+                    enable:true,
+                    modo:"single",
+                },
+                layout:{
+                    padding:{
+                        left:8,
+                        top:0,
+                        rigth:0,
+                        bottom:20,
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+</html>

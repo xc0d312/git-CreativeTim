@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.padre{
+    height: 100vh;
+    position: relative;
+    background-color: yellow;
+}
+.main-panel{
+    width: 100%;
+     border-top: 2px crimson solid;
+     min-height: 100vh;
+}
+.hijo{
+    background: crimson;
+    width: 230px;
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 50px;
+    left: 10px;
+}

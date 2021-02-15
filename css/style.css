@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background: #1D1C2C;
+}
+.wrapper{
+    height: 100vh;
+    position: relative;
+}
+.navbarButtoms{
+    display: flex;
+    align-items: center;
+}
+
+.navbarProfile{
+  display: flex;
+   align-items: center;
+}
+.navbarProfile i{
+  margin-right: 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.photo img{
+    margin-top: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+.sidebar{
+    position: fixed;
+    width: 230px;
+    height: calc(100vh - 90px);
+    background: #1BD688;
+    top: 80px;
+    left: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    transition: 0.5s;
+}
+.fa-github-alt{
+    font-size: 20px;
+    color: #1D1C2C;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+   margin: 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+
+}
+.sidebar .logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo::after{
+    content: '';
+    width: 90%;
+    height: 1px;
+    background: white;
+    position: absolute;
+   bottom: 0;
+}
+.navbarButtoms #btnleft{
+    display: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navbarButtoms #btnFixed{
+    display: none;
+    color: white;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.navbarButtoms #btnSidebar{
+    margin-left: 40px;
+    color: white;
+    font-size: 20px;
+}
+.navbarButtoms p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.sidebarBtn{
+    margin-top: 40px;
+}
+.sidebarBtn a:hover{
+    background: darkmagenta;
+}
+.sidebarBtn a{
+    width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+   align-items: center;
+ padding-left: 30px;
+  line-height: 65px;
+  transition: .5s;
+}
+.sidebarBtn a span{
+ margin-left: 5px;
+}
+.content{
+    padding: 70px 30px 20px 270px;
+    transition: .5s;
+
+}
+.main-panel{
+     width: 100%;
+    border-top: 1px #1BD688 solid ;
+    height: 100vh;
+    float: right;
+   
+}
+
+
+.cardHeader{
+    margin: 10px 50px 0 50px;
+    color: white;
+    
+}
+
+.card{
+    background: #27293D;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+   
+}
+.grid-row-4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+    
+}
+.card-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a8a8aa;
+    font-size: 16px;
+    position: relative;
+   
+}
+.card-Header h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+.card-Header::after{
+    content: "";
+    width: 90%;
+  left: 12px;
+    position: absolute;
+    height: 1px;
+    background: #a8a8aa;
+    bottom: 0;
+}
+.card .card-Header .icono{
+margin: 10px auto 5px 10px;
+width: 50px;
+height: 50px;
+
+}
+.icono .fa-comments{
+  background: #FF827A;
+  background-image: linear-gradient(to bottom left,#FF6E8A,#FF827A,#FF6E3c);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px 8px 10px 8px;
+}
+
+.icono .fa-user{
+    background: #2183F8;
+    background-image: linear-gradient(to bottom left, #2183F8,#2C68F5,#2B6AF5);
+    background-size: 210% 210%;
+    background-position: 100% 0;
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+}
+.icono .fa-star{
+    background: #D750D5;
+    background-image: linear-gradient(tto bottom left, #D750D5,#C452EA,#D250DA);
+    border-radius: 50%;
+    padding: 10px 9px 10px 9px;
+    color: #fff;
+}
+.icono .fa-dna{
+    background: #F0332F;
+    background-image: linear-gradient(to bottom left,#F0332F,#FA527A,#F54458);
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+}
+.footerCard{
+   padding: 5px 0 8px 10px;
+    color:  #a8a8a8;
+    font-size: 12px;
+}
+
+.grid-row_charts{
+   
+ display: grid;
+ grid-template-columns:repeat(3,1fr);
+ grid-gap: 5px;
+ max-width: 100%;
+}
+
+.cardChart{
+  overflow: hidden;
+}
+.sidebar.toogle{
+    width: 80px !important;
+}
+.toogle .logo i{
+ margin-left: 80px;
+}
+.toogle .logo::after{
+   width: 70%;
+}
+.toogle .logo a{
+    opacity: 0;
+    transform: translate(-25px);
+}
+.toogle .sidebarBtn a span{
+    opacity: 0;
+    transform: translate(-25px);
+}
+button.scroll{
+    display: block !important;
+}
+.btnFixed{
+    position: fixed;
+    left: 40px;
+}
+.navbarButtoms.none #btnSidebar,.navbarButtoms.none p{
+    display: none;
+}
+.content.main{
+    padding: 70px 30px 20px 120px;
+}
+@media screen and (max-width:1100px){
+    .sidebar{
+        left: 0;
+        top: 0;
+        z-index: 1032;
+        opacity: 0;
+        height: 100vh;
+        display: block;
+        width: 230px !important;
+        border-radius: 0;
+        transition: .5s;
+        transform: rotateZ(-260deg);
+        transform-origin: left bottom;
+        overflow-y: visible;
+      
+        position: fixed;
+        visibility: visible;
+       
+    }
+    /*.sidebar.toogle{
+        transition: 0.5s;
+        z-index: 1000;
+    }
+    .sidebar-wrapper{
+        transition-property: top,bottom,width;
+        transition-duration: .2s,.2s,.35s;
+        transition-timing-function: linear,linear,
+    }*/
+   .content{
+        padding-left: 30px;
+    }
+   .btnFixed button#btnFixed{
+       display: none !important;
+   }
+   #btnSidebar{
+       display: none !important;
+   }
+   #btnleft{
+    margin-left: 40px;
+       display: block !important;
+   }
+   .nav-open .sidebar{
+       opacity: 100%;
+       width: 230px !important;
+      transition: .5s;
+      transform: translateZ(0px);
+   }
+   .nav-open .main-panel{
+       right: 0;
+       transition: .5s;
+       transform: translate3d(230px,0,0);
+   }
+   .toogle .logo i{
+    margin-left: 0px;
+   }
+   .toogle .logo::after{
+      width: 90%;
+   }
+   .toogle .logo a{
+       opacity: 100;
+       transform: translate(0);
+   }
+   .toogle .sidebarBtn a span{
+       opacity: 100;
+       transform: translate(0);
+   }
+}
+@media screen and (max-width:850px){
+    .grid-row-4{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-row_charts{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:600px){
+    .grid-row-4{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
